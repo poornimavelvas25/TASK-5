@@ -25,7 +25,23 @@ Packet Monitor:There are color codes for each type of packet. The packets are sh
 
 9.ASCII/text content (if readable)
 
-2.Wireshark can color packets based on rules that match particular fields in packets, to help the user identify the types of traffic.
+## How Protocols Are Structured in Wireshark
+
+When you click a packet, Wireshark displays protocol layers in this order:
+
+Frame
+
+Ethernet II
+
+Internet Protocol (IP)
+
+Transport Layer (TCP/UDP)
+
+Application Layer (HTTP/DNS/etc.)
+
+This layered structure follows the TCP/IP model and helps in detailed packet analysis.
+
+## Wireshark can color packets based on rules that match particular fields in packets, to help the user identify the types of traffic.
 
 Light blue → TCP traffic
 
@@ -35,7 +51,7 @@ Black/Red → TCP errors or retransmissions
 
 Purple → DNS
 
-3.Flitering Commands:-
+## Flitering Commands:-
 
 tcp - Shows only tcp packets.
 
@@ -57,7 +73,7 @@ http - Shows HTTP packets.
 
 dns - Shows DNS packets.
 
-4.Important Wireshark Features
+## Important Wireshark Features
 
 Follow TCP Stream → Reconstruct entire communication session
 
@@ -69,7 +85,7 @@ Expert Information → Highlights warnings & errors
 
 Export Objects → Extract files from HTTP traffic
 
-5.Why Wireshark is Important?
+## Why Wireshark is Important?
 
 Detect suspicious traffic
 
@@ -79,7 +95,7 @@ Troubleshoot network problems
 
 Monitor bandwidth usage
 
-6.Conclusion
+## Conclusion
 
 Wireshark is a powerful packet analyzer used for network troubleshooting, monitoring, and security analysis. 
 Using filters effectively allows analysts to quickly identify relevant traffic and detect potential threats.
